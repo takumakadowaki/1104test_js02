@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>配列</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<style>#main{margin:5px;padding: 5px; background: #666;color:#fff;}</style>
+</head>
+<body>
+<h1>配列</h1>
+
+<!-- ここに日時を表示させる -->
+<div id="view"></div>
+<!-- ここに日時を表示させる -->
+
+<input type="text" id="test">
+<button id="aa">ボタンを押す</button>
+
+<script>
+//記述練習
+const a = ["A","B","C"];
+console.log(a, 'aタンス');
+
+// const aというタンスの
+// Bというものだけ表示してください
+// console.log(a[B]);
+
+// タンスの名前は
+// menu
+// 中身は
+// カレー
+// おでん
+// うどん
+// 麻婆豆腐
+// それを表示してください
+
+// const menu = ["カレー","おでん","うどん","麻婆豆腐","しし鍋"];
+// console.log(menu, 'menuタンス');
+
+// console.log(menu[3]);
+// $('#view').html(menu[3])
+// $('#view').html(menu[1])しし鍋
+// $('#view').html(menu[2])
+
+// for(let i =0; i <= menu.length; i++){
+//     console.log(menu[i], 'menuの中身')
+//   }
+
+
+$('#aa').on('click', function () {
+    let vv = $('#test').val();
+    console.log(vv)
+});
+
+if (vv === ''){
+    alert('no')   
+} 
+
+
+// //くじ札
+// const kuji = ["大吉", "吉", "凶"];
+// const r = Math.floor(Math.random()*3); 
+// $("#view").html(kuji[r]);
+
+</script>
+</body>
+</html>
